@@ -1,0 +1,15 @@
+﻿@model PrjMVCFirstApp.Models.Employee
+@{
+    ViewBag.Title = "mymethod";
+}
+
+<h2>mymethod</h2>
+
+<ul>
+    <li>@Model.id</li>
+    <li>@Model.name</li>
+    <li>@Model.age</li>
+</ul>
+@ViewBag.Name<br />
+@ViewData["Name"].ToString()<br />
+@TempData["say"].ToString()

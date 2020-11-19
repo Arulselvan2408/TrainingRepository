@@ -1,0 +1,27 @@
+﻿@model IEnumerable<PrjMVCFirstApp.Models.Employee>
+@{
+    ViewBag.Title = "DisplayEmployeeList";
+}
+
+<h2>DisplayEmployeeList</h2>
+<table class="table table-responsive">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>@item.id</td>
+                <td>@item.name</td>
+                <td>@item.age</td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+
